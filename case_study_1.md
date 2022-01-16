@@ -353,7 +353,34 @@ FROM menu_sales_members_1
 ORDER BY customer_id, order_date;
 ```
 
- 
+**12 . Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.**
+
+So it's continuation from previous where danny wants to rank the members, so we can rank the members according to the order_date.
+
+```sql
+WITH members_list AS (
+SELECT 
+  customer_id,
+  order_date,
+  product_name,
+  price,
+  (CASE
+     WHEN order_date >= join_date THEN 'Y'
+     ELSE 'N' 
+     END) AS member
+FROM menu_sales_members_1
+ORDER BY customer_id, order_date,product_name
+)
+SELECT *,
+  CASE
+     WHEN member = 'Y' THEN DENSE_RANK() OVER (PARTITION BY customer_id, member ORDER BY order_date)
+     ELSE null
+     END as ranking
+FROM members_list;
+```
+  
+
+
 
   
   
