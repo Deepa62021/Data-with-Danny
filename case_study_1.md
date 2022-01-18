@@ -1,8 +1,33 @@
 # Case Study #1 - Danny's Diner
 
-<https://user-images.githubusercontent.com/74512335/130088045-01bbd3aa-7619-437e-bcb8-cf19e95ccfba.png>
+![image](https://user-images.githubusercontent.com/74512335/131230167-b3074b9e-6992-4fb3-84a1-586984a0ccc8.png)
+## Datasets
 
-# Case Study Questions
+Danny has shared 3 key datasets for this case study: **Sales | Menu | Members**
+
+## Entity Relationship Diagram
+
+![image](https://user-images.githubusercontent.com/74512335/129699208-a6703c22-b8af-443b-bb1c-ab924560bf88.png)
+
+## Table 1: Sales
+
+The sales table captures all customer_id level purchases with an corresponding order_date and product_id information for when and what menu items were ordered.
+
+![image](https://user-images.githubusercontent.com/74512335/129871895-6a2283d1-6f70-4dfa-acbf-de7db46842a6.png)
+
+## Table 2: Menu
+
+The menu table maps the product_id to the actual product_name and price of each menu item.
+
+![image](https://user-images.githubusercontent.com/74512335/129872863-4415d888-a599-4699-a71f-fc8e65582fc6.png)
+
+## Table 3: Members
+
+The final members table captures the join_date when a customer_id joined the beta version of the Danny’s Diner loyalty program.
+
+![image](https://user-images.githubusercontent.com/74512335/129873255-d73f810e-296b-4d51-aff9-5e4424769d0e.png)
+
+## Case Study Questions
 
 Each of the following case study questions can be answered using a single SQL statement:
 
