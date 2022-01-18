@@ -25,3 +25,35 @@ Note that customers can order multiple pizzas in a single order with varying **e
 The **exclusions** and **extras** columns will need to be cleaned up before using them in your queries.
 
 ![image](https://user-images.githubusercontent.com/74512335/131252232-fac52941-df94-418b-9f06-68b7bec50e92.png)
+
+### Table 3: runner_orders
+
+After each orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
+
+The **pickup_time** is the timestamp at which the runner arrives at the Pizza Runner headquarters to pick up the freshly cooked pizzas. The **distance** and **duration** fields are related to how far and long the runner had to travel to deliver the order to the respective customer.
+
+![image](https://user-images.githubusercontent.com/74512335/131252289-56aa57c9-b346-4c66-b8d2-d1f1c54375cf.png)
+
+### Table 4: pizza_names
+
+At the moment - Pizza Runner only has 2 pizzas available the Meat Lovers or Vegetarian!
+
+![image](https://user-images.githubusercontent.com/74512335/131252340-3b77436b-58cc-4783-9fd4-47455af3c7f8.png)
+
+### Table 5: pizza_recipes
+
+Each **pizza_id** has a standard set of toppings which are used as part of the pizza recipe.
+
+![image](https://user-images.githubusercontent.com/74512335/131252356-aac99096-cc55-474a-8bd2-0b158c146a66.png)
+
+### Table 6: pizza_toppings
+
+This table contains all of the **topping_name** values with their corresponding **topping_id** value
+
+
+![image](https://user-images.githubusercontent.com/74512335/131252371-a90175c7-7bbb-4979-a989-225fb9e003f8.png)
+
+
+
+
+
