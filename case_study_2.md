@@ -55,6 +55,25 @@ This table contains all of the **topping_name** values with their corresponding 
 
 ## Word of caution from Danny - "Before you start writing your SQL queries however - you might want to investigate the data, you may want to do something with some of those null values and data types in the customer_orders and runner_orders tables."
 
+### Check data types for the tables **customer_orders** and **runner_orders**
+
+**Data type check - customer_orders**
+
+```sql
+
+SELECT
+  table_name,
+  column_name,
+  data_type
+FROM information_schema.columns
+WHERE table_name = 'customer_orders';
+```
+**OUTPUT:**
+
+
+
+
+
 
 
 
