@@ -16,21 +16,21 @@ The **runners** table shows the **registration_date** for each new runner
 
 ### Table 2: customer_orders
 
-Customer pizza orders are captured in the **customer_orders** table with 1 row for each individual pizza that is part of the order.
+* Customer pizza orders are captured in the **customer_orders** table with 1 row for each individual pizza that is part of the order.
 
-The **pizza_id** relates to the type of pizza which was ordered whilst the **exclusions** are the **ingredient_id** values which should be removed from the pizza and the **extras** are the **ingredient_id** values which need to be added to the pizza.
+* The **pizza_id** relates to the type of pizza which was ordered whilst the **exclusions** are the **ingredient_id** values which should be removed from the pizza and the **extras** are the **ingredient_id** values which need to be added to the pizza.
 
-Note that customers can order multiple pizzas in a single order with varying **exclusions** and **extras** values even if the pizza is the same type!
+* Note that customers can order multiple pizzas in a single order with varying **exclusions** and **extras** values even if the pizza is the same type!
 
-The **exclusions** and **extras** columns will need to be cleaned up before using them in your queries.
+* The **exclusions** and **extras** columns will need to be cleaned up before using them in your queries.
 
 ![image](https://user-images.githubusercontent.com/74512335/131252232-fac52941-df94-418b-9f06-68b7bec50e92.png)
 
 ### Table 3: runner_orders
 
-After each orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
+* After each orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
 
-The **pickup_time** is the timestamp at which the runner arrives at the Pizza Runner headquarters to pick up the freshly cooked pizzas. The **distance** and **duration** fields are related to how far and long the runner had to travel to deliver the order to the respective customer.
+* The **pickup_time** is the timestamp at which the runner arrives at the Pizza Runner headquarters to pick up the freshly cooked pizzas. The **distance** and **duration** fields are related to how far and long the runner had to travel to deliver the order to the respective customer.
 
 ![image](https://user-images.githubusercontent.com/74512335/131252289-56aa57c9-b346-4c66-b8d2-d1f1c54375cf.png)
 
@@ -52,6 +52,8 @@ This table contains all of the **topping_name** values with their corresponding 
 
 
 ![image](https://user-images.githubusercontent.com/74512335/131252371-a90175c7-7bbb-4979-a989-225fb9e003f8.png)
+
+## Word of caution from Danny - "Before you start writing your SQL queries however - you might want to investigate the data, you may want to do something with some of those null values and data types in the customer_orders and runner_orders tables."
 
 
 
